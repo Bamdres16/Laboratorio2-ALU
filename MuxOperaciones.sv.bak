@@ -1,0 +1,21 @@
+// Operacion: Selecciona si es aritmética o lógica
+//	s: Es el número de bit
+
+module MuxOperaciones #(parameter N = 8)
+							 (input logic [N-1:0] suma, resta, corrAR, corrAL, corrC, AND, OR, XOR, corrLR,corrLI, corrLC,
+							 input logic [7:0] s,
+							 input logic operacion,
+							 output logic [N-1: 0] out);
+							 
+		assign out = operacion ? (s[2] ? (s[1] ? (s[0] ? suma : suma) 
+												  			: (s[0] ? suma : corrC)) 
+												 : (s[1] ? (s[0] ? corrAL : corrAR) 
+														   : (s[0] ? resta : suma)))
+									  : (s[2] ? (s[1] ? (s[0] ? AND : AND) 
+															: (s[0] ? corrLC : corrLI)) 
+												 : (s[1] ? (s[0] ? corrLR : XOR) 
+															: (s[0] ? OR : AND)));
+		
+		
+																		
+endmodule

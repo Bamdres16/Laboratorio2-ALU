@@ -1,0 +1,12 @@
+module testALU #(parameter N = 8)
+					(input [N-1:0]A,B,s,f,
+					input operacion,
+					output [N-1:0] out)
+
+MuxOperaciones ALU (A,B,s,f,operacion,out);
+
+initial begin
+	#10 operacion = 0;
+	#1 $display("operacion = %b", operacion);
+end 
+endmodule

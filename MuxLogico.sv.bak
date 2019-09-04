@@ -1,0 +1,10 @@
+module MuxLogico #(parameter N = 8)
+						(input logic [N-1:0] AND, OR, XOR, corrLR,corrLI, corrLC,
+						 input logic [7:0] s,
+						 output logic [N-1:0] out);
+	assign out = (s[2] ? (s[1] ? (s[0] ? AND : AND) 
+										: (s[0] ? corrLC : corrLI)) 
+							 : (s[1] ? (s[0] ? corrLR : XOR) 
+										: (s[0] ? OR : AND)));
+	
+endmodule 

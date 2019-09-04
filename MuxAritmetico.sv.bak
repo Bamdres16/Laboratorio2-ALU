@@ -1,0 +1,12 @@
+module MuxAritmetico #(parameter N = 8)
+							(input logic [N-1:0] suma, resta, corrAR, corrAL, corrAC,
+							 input logic [7:0] s,
+						    output logic [N-1:0] out);
+	assign out = (s[2] ? (s[1] ? (s[0] ? suma : suma) 
+										: (s[0] ? suma : corrAC)) 
+							 : (s[1] ? (s[0] ? corrAL : corrAR) 
+										: (s[0] ? resta : suma)));
+	
+endmodule 
+
+
