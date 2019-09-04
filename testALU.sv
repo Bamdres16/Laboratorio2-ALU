@@ -1,15 +1,16 @@
-module testALU ();
+module testALU #(parameter N = 4);
 					
-logic [3:0] A, B;
-logic [2:0] s,f;
-logic operacion;
-logic [3:0] out;		
+logic [N-1:0] A, B, out;
+logic [2:0] selector;
+logic operacion, cout;
+	
 
-MuxOperaciones #(4)ALU (A,B,s,f,operacion,out);
+MuxOperaciones #(N)ALU (A,B,selector,operacion,cout,out);
 
 initial begin
-	
-	#20 A = 4'b0001; B = 4'b0001; operacion = 0; f = 3'b000; s = 3'b000;
+	operacion = 1; selector = 3'b000; A = 4'b1010; B = 4'b1010;
+	#10 A = 4'b1111; B = 4'b1111;
+	#10 operacion = 0; selector = 3'b010;
 	
 	
 end 

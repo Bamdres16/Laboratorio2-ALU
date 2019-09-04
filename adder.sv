@@ -8,8 +8,8 @@ module adder #(parameter N)
 		
 		output logic cout);
 		
-	//assign {cout,s} = a + b + cin;
-	assign s = a+b;
+	assign {cout,s} = a + b + cin;
+	
 endmodule
 
 

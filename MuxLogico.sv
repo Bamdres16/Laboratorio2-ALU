@@ -17,9 +17,9 @@ module MuxLogico #(parameter N)
 	xor_gate #(N) CG (A, B, out_corrLC);
 	
 	
-	assign out = (s[2] ? (s[1] ? (s[0] ? out_and : out_and) 
+	assign out = s[2] ? (s[1] ? (s[0] ? out_and : out_and) 
 										: (s[0] ? out_corrLC : out_corrLI)) 
 							 : (s[1] ? (s[0] ? out_corrLR : out_xor) 
-										: (s[0] ? out_or : out_and)));
+										: (s[0] ? out_or : out_and));
 	
 endmodule 

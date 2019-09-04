@@ -12,118 +12,118 @@
 # 
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/xor_gate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:32 on Sep 03,2019
+# Start time: 22:47:14 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/xor_gate.sv 
 # -- Compiling module xor_gate
 # 
 # Top level modules:
 # 	xor_gate
-# End time: 11:39:32 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:14 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/MuxOperaciones.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:32 on Sep 03,2019
+# Start time: 22:47:14 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/MuxOperaciones.sv 
 # -- Compiling module MuxOperaciones
 # 
 # Top level modules:
 # 	MuxOperaciones
-# End time: 11:39:32 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:14 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/substractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:32 on Sep 03,2019
+# Start time: 22:47:14 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/substractor.sv 
 # -- Compiling module substractor
 # 
 # Top level modules:
 # 	substractor
-# End time: 11:39:32 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:14 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/or_gate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:32 on Sep 03,2019
+# Start time: 22:47:14 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/or_gate.sv 
 # -- Compiling module or_gate
 # 
 # Top level modules:
 # 	or_gate
-# End time: 11:39:33 on Sep 03,2019, Elapsed time: 0:00:01
+# End time: 22:47:15 on Sep 03,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/multiplicacion.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:33 on Sep 03,2019
+# Start time: 22:47:15 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/multiplicacion.sv 
 # -- Compiling module multiplicacion
 # 
 # Top level modules:
 # 	multiplicacion
-# End time: 11:39:33 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:15 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/division.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:33 on Sep 03,2019
+# Start time: 22:47:15 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/division.sv 
 # -- Compiling module division
 # 
 # Top level modules:
 # 	division
-# End time: 11:39:33 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:15 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/and_gate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:33 on Sep 03,2019
+# Start time: 22:47:15 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/and_gate.sv 
 # -- Compiling module and_gate
 # 
 # Top level modules:
 # 	and_gate
-# End time: 11:39:34 on Sep 03,2019, Elapsed time: 0:00:01
+# End time: 22:47:15 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:34 on Sep 03,2019
+# Start time: 22:47:15 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 11:39:34 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:16 on Sep 03,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/MuxLogico.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:34 on Sep 03,2019
+# Start time: 22:47:16 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/MuxLogico.sv 
 # -- Compiling module MuxLogico
 # 
 # Top level modules:
 # 	MuxLogico
-# End time: 11:39:34 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:16 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/MuxAritmetico.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:34 on Sep 03,2019
+# Start time: 22:47:16 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/MuxAritmetico.sv 
 # -- Compiling module MuxAritmetico
 # 
 # Top level modules:
 # 	MuxAritmetico
-# End time: 11:39:34 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:16 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Escritorio/ALU {D:/Escritorio/ALU/testALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:39:34 on Sep 03,2019
+# Start time: 22:47:16 on Sep 03,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Escritorio/ALU" D:/Escritorio/ALU/testALU.sv 
 # -- Compiling module testALU
 # 
 # Top level modules:
 # 	testALU
-# End time: 11:39:34 on Sep 03,2019, Elapsed time: 0:00:00
+# End time: 22:47:16 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.testALU
 # vsim work.testALU 
-# Start time: 11:39:37 on Sep 03,2019
+# Start time: 22:47:19 on Sep 03,2019
 # Loading sv_std.std
 # Loading work.testALU
 # Loading work.MuxOperaciones
@@ -136,17 +136,51 @@ vsim work.testALU
 # Loading work.substractor
 # Loading work.division
 # Loading work.multiplicacion
-# ** Warning: (vsim-3015) D:/Escritorio/ALU/MuxAritmetico.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Escritorio/ALU/adder.sv(5).
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (1) does not match connection size (4) for port 'cout'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/MuxAritmetico.sv(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Escritorio/ALU/adder.sv(5).
 #    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/MA/AD File: D:/Escritorio/ALU/adder.sv
 add wave -position end  sim:/testALU/A
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: brian  Hostname: DESKTOP-9OAG4MA  ProcessID: 12592
-#           Attempting to use alternate WLF file "./wlftb9416a".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftb9416a
-add wave -position end  sim:/testALU/B
 add wave -position end  sim:/testALU/B
 add wave -position end  sim:/testALU/out
+add wave -position end  sim:/testALU/cout
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: brian  Hostname: DESKTOP-9OAG4MA  ProcessID: 12592
+#           Attempting to use alternate WLF file "./wlft4i75a1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4i75a1
 run
-# End time: 11:40:09 on Sep 03,2019, Elapsed time: 0:00:32
-# Errors: 0, Warnings: 3
+add wave -position end  sim:/testALU/ALU/A
+add wave -position end  sim:/testALU/ALU/B
+add wave -position end  sim:/testALU/ALU/out
+run
+restart
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (1) does not match connection size (4) for port 'cout'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/MuxAritmetico.sv(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Escritorio/ALU/adder.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/MA/AD File: D:/Escritorio/ALU/adder.sv
+run
+add wave -position 2  sim:/testALU/cout
+restart -f
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (1) does not match connection size (4) for port 'cout'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/MuxAritmetico.sv(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Escritorio/ALU/adder.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/MA/AD File: D:/Escritorio/ALU/adder.sv
+run
+add wave -position 2  sim:/testALU/ALU/cout
+restart -f
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/testALU.sv(8): [PCDPC] - Port size (1) does not match connection size (4) for port 'cout'. The port definition is at: D:/Escritorio/ALU/MuxOperaciones.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU File: D:/Escritorio/ALU/MuxOperaciones.sv
+# ** Warning: (vsim-3015) D:/Escritorio/ALU/MuxAritmetico.sv(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Escritorio/ALU/adder.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/MA/AD File: D:/Escritorio/ALU/adder.sv
+run
+# End time: 22:49:19 on Sep 03,2019, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 14
