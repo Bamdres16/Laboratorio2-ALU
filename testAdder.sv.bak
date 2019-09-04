@@ -1,0 +1,18 @@
+module testAdder#(parameter N = 8);
+
+logic [N-1:0]A;
+logic [N-1:0]B;
+logic Cin;
+logic [N-1:0] Suma;
+logic Cout;
+
+
+adder #(N) (.a(A), .b(B), .cin(Cin), .s(Suma), .cout(Cout));
+
+
+initial begin 
+
+#10 A = 8'b00000000;B = 8'b00000001; Cin = 0;
+
+endmodule
+

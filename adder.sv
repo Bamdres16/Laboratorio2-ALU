@@ -9,7 +9,11 @@ module adder #(parameter N)
 		output logic cout);
 		
 	assign {cout,s} = a + b + cin;
+<<<<<<< HEAD
 	
+=======
+	//assign s = a+b;
+>>>>>>> be719f87da2b3f2e17e53a22dabc3511f133f571
 endmodule
 
 
