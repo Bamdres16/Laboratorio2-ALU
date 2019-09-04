@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ALU
-Tue Sep 03 11:39:12 2019
+Tue Sep 03 20:45:16 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -9,24 +9,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: MuxOperaciones:ALU
-  5. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML
-  6. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|and_gate:AG
-  7. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|or_gate:OG
-  8. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:XG
-  9. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:RG
- 10. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:IG
- 11. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:CG
- 12. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA
- 13. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|adder:AD
- 14. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|substractor:SB
- 15. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|division:AR
- 16. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|multiplicacion:AI
- 17. Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|substractor:AC
- 18. Analysis & Elaboration Settings
- 19. Port Connectivity Checks: "MuxOperaciones:ALU|MuxAritmetico:MA|adder:AD"
- 20. Port Connectivity Checks: "MuxOperaciones:ALU"
- 21. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |testAdder
+  5. Parameter Settings for User Entity Instance: adder:dut
+  6. Analysis & Elaboration Settings
+  7. Port Connectivity Checks: "adder:dut"
+  8. Analysis & Elaboration Messages
 
 
 
@@ -52,10 +39,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Sep 03 11:39:12 2019       ;
+; Analysis & Elaboration Status ; Successful - Tue Sep 03 20:45:16 2019       ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; ALU                                         ;
-; Top-level Entity Name         ; testALU                                     ;
+; Top-level Entity Name         ; testAdder                                   ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -73,7 +60,7 @@ refer to the applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -83,143 +70,23 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 4     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |testAdder ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 8     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; N              ; 4     ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|and_gate:AG ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|or_gate:OG ;
-+----------------+-------+----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                           ;
-+----------------+-------+----------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                 ;
-+----------------+-------+----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:XG ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:RG ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:IG ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxLogico:ML|xor_gate:CG ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|adder:AD ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|substractor:SB ;
-+----------------+-------+------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                   ;
-+----------------+-------+------------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                         ;
-+----------------+-------+------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|division:AR ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|multiplicacion:AI ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MuxOperaciones:ALU|MuxAritmetico:MA|substractor:AC ;
-+----------------+-------+------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                   ;
-+----------------+-------+------------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                         ;
-+----------------+-------+------------------------------------------------------------------------+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder:dut ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 8     ; Signed Integer                ;
++----------------+-------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -229,7 +96,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; testALU            ; ALU                ;
+; Top-level entity name                                                           ; testAdder          ; ALU                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -310,23 +177,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MuxOperaciones:ALU|MuxAritmetico:MA|adder:AD"                                                                                                                                         ;
-+---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; cin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; cin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; cout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-+---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MuxOperaciones:ALU"                                                                 ;
+; Port Connectivity Checks: "adder:dut"                                                                          ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -336,53 +193,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Sep 03 11:38:46 2019
+    Info: Processing started: Tue Sep 03 20:45:01 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file xor_gate.sv
-    Info (12023): Found entity 1: xor_gate File: D:/Escritorio/ALU/xor_gate.sv Line: 1
+    Info (12023): Found entity 1: xor_gate File: C:/Users/Edgar/Documents/Laboratorio2-ALU/xor_gate.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxoperaciones.sv
-    Info (12023): Found entity 1: MuxOperaciones File: D:/Escritorio/ALU/MuxOperaciones.sv Line: 4
+    Info (12023): Found entity 1: MuxOperaciones File: C:/Users/Edgar/Documents/Laboratorio2-ALU/MuxOperaciones.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file multiplex.sv
-    Info (12023): Found entity 1: multiplex File: D:/Escritorio/ALU/multiplex.sv Line: 1
+    Info (12023): Found entity 1: multiplex File: C:/Users/Edgar/Documents/Laboratorio2-ALU/multiplex.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file general.sv
-    Info (12023): Found entity 1: general File: D:/Escritorio/ALU/general.sv Line: 1
+    Info (12023): Found entity 1: general File: C:/Users/Edgar/Documents/Laboratorio2-ALU/general.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file substractor.sv
-    Info (12023): Found entity 1: substractor File: D:/Escritorio/ALU/substractor.sv Line: 1
+    Info (12023): Found entity 1: substractor File: C:/Users/Edgar/Documents/Laboratorio2-ALU/substractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file or_gate.sv
-    Info (12023): Found entity 1: or_gate File: D:/Escritorio/ALU/or_gate.sv Line: 1
+    Info (12023): Found entity 1: or_gate File: C:/Users/Edgar/Documents/Laboratorio2-ALU/or_gate.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplicacion.sv
-    Info (12023): Found entity 1: multiplicacion File: D:/Escritorio/ALU/multiplicacion.sv Line: 1
+    Info (12023): Found entity 1: multiplicacion File: C:/Users/Edgar/Documents/Laboratorio2-ALU/multiplicacion.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file division.sv
-    Info (12023): Found entity 1: division File: D:/Escritorio/ALU/division.sv Line: 1
+    Info (12023): Found entity 1: division File: C:/Users/Edgar/Documents/Laboratorio2-ALU/division.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file and_gate.sv
-    Info (12023): Found entity 1: and_gate File: D:/Escritorio/ALU/and_gate.sv Line: 1
+    Info (12023): Found entity 1: and_gate File: C:/Users/Edgar/Documents/Laboratorio2-ALU/and_gate.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: D:/Escritorio/ALU/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: C:/Users/Edgar/Documents/Laboratorio2-ALU/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxlogico.sv
-    Info (12023): Found entity 1: MuxLogico File: D:/Escritorio/ALU/MuxLogico.sv Line: 1
+    Info (12023): Found entity 1: MuxLogico File: C:/Users/Edgar/Documents/Laboratorio2-ALU/MuxLogico.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxaritmetico.sv
-    Info (12023): Found entity 1: MuxAritmetico File: D:/Escritorio/ALU/MuxAritmetico.sv Line: 1
+    Info (12023): Found entity 1: MuxAritmetico File: C:/Users/Edgar/Documents/Laboratorio2-ALU/MuxAritmetico.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testalu.sv
-    Info (12023): Found entity 1: testALU File: D:/Escritorio/ALU/testALU.sv Line: 1
-Info (12127): Elaborating entity "testALU" for the top level hierarchy
-Info (12128): Elaborating entity "MuxOperaciones" for hierarchy "MuxOperaciones:ALU" File: D:/Escritorio/ALU/testALU.sv Line: 8
-Info (12128): Elaborating entity "MuxLogico" for hierarchy "MuxOperaciones:ALU|MuxLogico:ML" File: D:/Escritorio/ALU/MuxOperaciones.sv Line: 12
-Info (12128): Elaborating entity "and_gate" for hierarchy "MuxOperaciones:ALU|MuxLogico:ML|and_gate:AG" File: D:/Escritorio/ALU/MuxLogico.sv Line: 12
-Info (12128): Elaborating entity "or_gate" for hierarchy "MuxOperaciones:ALU|MuxLogico:ML|or_gate:OG" File: D:/Escritorio/ALU/MuxLogico.sv Line: 13
-Info (12128): Elaborating entity "xor_gate" for hierarchy "MuxOperaciones:ALU|MuxLogico:ML|xor_gate:XG" File: D:/Escritorio/ALU/MuxLogico.sv Line: 14
-Info (12128): Elaborating entity "MuxAritmetico" for hierarchy "MuxOperaciones:ALU|MuxAritmetico:MA" File: D:/Escritorio/ALU/MuxOperaciones.sv Line: 13
-Info (12128): Elaborating entity "adder" for hierarchy "MuxOperaciones:ALU|MuxAritmetico:MA|adder:AD" File: D:/Escritorio/ALU/MuxAritmetico.sv Line: 13
-Warning (10034): Output port "cout" at adder.sv(9) has no driver File: D:/Escritorio/ALU/adder.sv Line: 9
-Info (12128): Elaborating entity "substractor" for hierarchy "MuxOperaciones:ALU|MuxAritmetico:MA|substractor:SB" File: D:/Escritorio/ALU/MuxAritmetico.sv Line: 14
-Info (12128): Elaborating entity "division" for hierarchy "MuxOperaciones:ALU|MuxAritmetico:MA|division:AR" File: D:/Escritorio/ALU/MuxAritmetico.sv Line: 15
-Info (12128): Elaborating entity "multiplicacion" for hierarchy "MuxOperaciones:ALU|MuxAritmetico:MA|multiplicacion:AI" File: D:/Escritorio/ALU/MuxAritmetico.sv Line: 16
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Tue Sep 03 11:39:12 2019
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:54
+    Info (12023): Found entity 1: testALU File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testxor.sv
+    Info (12023): Found entity 1: testXor File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testXor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testadder.sv
+    Info (12023): Found entity 1: testAdder File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv Line: 1
+Info (12127): Elaborating entity "testAdder" for the top level hierarchy
+Info (12128): Elaborating entity "adder" for hierarchy "adder:dut" File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv Line: 10
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4793 megabytes
+    Info: Processing ended: Tue Sep 03 20:45:16 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:34
 
 
