@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at shiftLeft.sv(1): object "N" differs only in case from object "n" in the same scope File: C:/Users/Edgar/Documents/Laboratorio2-ALU/shiftLeft.sv Line: 1
+Info (10281): Verilog HDL Declaration information at sheftRight.sv(1): object "N" differs only in case from object "n" in the same scope File: C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv Line: 1

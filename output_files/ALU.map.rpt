@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ALU
-Tue Sep 03 20:45:16 2019
+Tue Sep 03 21:53:03 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -9,11 +9,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |testAdder
-  5. Parameter Settings for User Entity Instance: adder:dut
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |testShiftRight
+  5. Parameter Settings for User Entity Instance: sheftRight:dut
   6. Analysis & Elaboration Settings
-  7. Port Connectivity Checks: "adder:dut"
+  7. Port Connectivity Checks: "sheftRight:dut"
   8. Analysis & Elaboration Messages
+  9. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -39,10 +40,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Sep 03 20:45:16 2019       ;
+; Analysis & Elaboration Status ; Successful - Tue Sep 03 21:53:03 2019       ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; ALU                                         ;
-; Top-level Entity Name         ; testAdder                                   ;
+; Top-level Entity Name         ; testShiftRight                              ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -70,23 +71,23 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |testAdder ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 8     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |testShiftRight ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder:dut ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; N              ; 8     ; Signed Integer                ;
-+----------------+-------+-------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sheftRight:dut ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -96,7 +97,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; testAdder          ; ALU                ;
+; Top-level entity name                                                           ; testShiftRight     ; ALU                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -177,14 +178,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder:dut"                                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sheftRight:dut"                                                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; shift ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -193,7 +193,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Sep 03 20:45:01 2019
+    Info: Processing started: Tue Sep 03 21:52:46 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -227,12 +227,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file testxor
     Info (12023): Found entity 1: testXor File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testXor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testadder.sv
     Info (12023): Found entity 1: testAdder File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv Line: 1
-Info (12127): Elaborating entity "testAdder" for the top level hierarchy
-Info (12128): Elaborating entity "adder" for hierarchy "adder:dut" File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv Line: 10
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft.sv
+    Info (12023): Found entity 1: shiftLeft File: C:/Users/Edgar/Documents/Laboratorio2-ALU/shiftLeft.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testshiftleft.sv
+    Info (12023): Found entity 1: testShiftLeft File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftLeft.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sheftright.sv
+    Info (12023): Found entity 1: sheftRight File: C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testshiftright.sv
+    Info (12023): Found entity 1: testShiftRight File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv Line: 1
+Info (12127): Elaborating entity "testShiftRight" for the top level hierarchy
+Info (12128): Elaborating entity "sheftRight" for hierarchy "sheftRight:dut" File: C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv Line: 7
+Warning (10230): Verilog HDL assignment warning at sheftRight.sv(7): truncated value with size 32 to match size of target (8) File: C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv Line: 7
+Info (144001): Generated suppressed messages file C:/Users/Edgar/Documents/Laboratorio2-ALU/output_files/ALU.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Tue Sep 03 20:45:16 2019
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Processing ended: Tue Sep 03 21:53:03 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/Edgar/Documents/Laboratorio2-ALU/output_files/ALU.map.smsg.
 
 

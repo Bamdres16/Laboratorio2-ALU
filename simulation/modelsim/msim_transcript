@@ -11,39 +11,39 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU {C:/Users/Edgar/Documents/Laboratorio2-ALU/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU {C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:45:28 on Sep 03,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU" C:/Users/Edgar/Documents/Laboratorio2-ALU/adder.sv 
-# -- Compiling module adder
+# Start time: 21:53:19 on Sep 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU" C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv 
+# -- Compiling module sheftRight
 # 
 # Top level modules:
-# 	adder
-# End time: 20:45:28 on Sep 03,2019, Elapsed time: 0:00:00
+# 	sheftRight
+# End time: 21:53:19 on Sep 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU {C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv}
+# vlog -sv -work work +incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU {C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:45:28 on Sep 03,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU" C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv 
-# -- Compiling module testAdder
+# Start time: 21:53:19 on Sep 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU" C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv 
+# -- Compiling module testShiftRight
 # 
 # Top level modules:
-# 	testAdder
-# End time: 20:45:28 on Sep 03,2019, Elapsed time: 0:00:00
+# 	testShiftRight
+# End time: 21:53:20 on Sep 03,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vsim work.testAdder
-# vsim work.testAdder 
-# Start time: 20:45:32 on Sep 03,2019
+vsim work.testShiftRight
+# vsim work.testShiftRight 
+# Start time: 21:53:31 on Sep 03,2019
 # Loading sv_std.std
-# Loading work.testAdder
-# Loading work.adder
-add wave -position end sim:/testAdder/dut/*
+# Loading work.testShiftRight
+# Loading work.sheftRight
+add wave -position end sim:/testShiftRight/dut/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: brian  Hostname: DESKTOP-9OAG4MA  ProcessID: 12592
-#           Attempting to use alternate WLF file "./wlfty9i1k3".
+#           Attempting to use alternate WLF file "./wlft5sg7vn".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfty9i1k3
+#           Using alternate file: ./wlft5sg7vn
 run
-# End time: 20:47:36 on Sep 03,2019, Elapsed time: 0:02:04
+# End time: 21:53:53 on Sep 03,2019, Elapsed time: 0:00:22
 # Errors: 0, Warnings: 2

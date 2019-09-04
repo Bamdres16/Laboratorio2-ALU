@@ -8,54 +8,55 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Edgar/Documents/Laboratorio2-ALU/simulation/modelsim
-vadder
+vsheftRight
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1567565128
+Z2 !s110 1567569199
 !i10b 1
-!s100 ehjUGJnRhRCWihfg?nTz32
-IoR07eK`WDzR]C1Zo[4?c<0
+!s100 PebPOmXDOKZ8zDI8>WCHO0
+IZ:j>JTRz9hic>B;z:cf2[3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 adder_sv_unit
+!s105 sheftRight_sv_unit
 S1
 R0
-w1567564255
-8C:/Users/Edgar/Documents/Laboratorio2-ALU/adder.sv
-FC:/Users/Edgar/Documents/Laboratorio2-ALU/adder.sv
+w1567568647
+8C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv
+FC:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1567565128.000000
-!s107 C:/Users/Edgar/Documents/Laboratorio2-ALU/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU|C:/Users/Edgar/Documents/Laboratorio2-ALU/adder.sv|
+Z5 !s108 1567569199.000000
+!s107 C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU|C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv|
 !i113 1
 Z6 o-sv -work work
 Z7 !s92 -sv -work work +incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU
 Z8 tCvgOpt 0
-vtestAdder
+nsheft@right
+vtestShiftRight
 R1
 R2
 !i10b 1
-!s100 B`>2@K3e0lB]@KC>b4i`H1
-Ilinh;Z;<F:dHaOzB[JA`H2
+!s100 cRl2S=zN1F;R1N8OoH;A_2
+I092Z7_RJOmD4C2N2JE8gf1
 R3
-!s105 testAdder_sv_unit
+!s105 testShiftRight_sv_unit
 S1
 R0
-w1567565098
-8C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv
-FC:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv
+w1567569147
+8C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv
+FC:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU|C:/Users/Edgar/Documents/Laboratorio2-ALU/testAdder.sv|
+!s107 C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU|C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv|
 !i113 1
 R6
 R7
 R8
-ntest@adder
+ntest@shift@right
