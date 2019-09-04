@@ -4,99 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "shift[0]",
+					"name" : "out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "shift[1]",
+					"name" : "f[2]",
 					"strict" : false
 				},
 				{
-					"name" : "shift[2]",
+					"name" : "operacion",
 					"strict" : false
 				},
 				{
-					"name" : "shift[3]",
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "shift[4]",
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{
-					"name" : "shift[5]",
+					"name" : "f[0]",
 					"strict" : false
 				},
 				{
-					"name" : "shift[6]",
+					"name" : "f[1]",
 					"strict" : false
 				},
 				{
-					"name" : "shift[7]",
+					"name" : "s[1]",
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
+					"name" : "s[2]",
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "s[0]",
 					"strict" : false
 				},
 				{
-					"name" : "a[2]",
+					"name" : "A[1]",
 					"strict" : false
 				},
 				{
-					"name" : "a[3]",
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{
-					"name" : "a[4]",
+					"name" : "A[3]",
 					"strict" : false
 				},
 				{
-					"name" : "a[5]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "a[6]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "a[7]",
-					"strict" : false
-				},
-				{
-					"name" : "n[0]",
-					"strict" : false
-				},
-				{
-					"name" : "n[4]",
-					"strict" : false
-				},
-				{
-					"name" : "n[5]",
-					"strict" : false
-				},
-				{
-					"name" : "n[6]",
-					"strict" : false
-				},
-				{
-					"name" : "n[7]",
-					"strict" : false
-				},
-				{
-					"name" : "n[2]",
-					"strict" : false
-				},
-				{
-					"name" : "n[1]",
-					"strict" : false
-				},
-				{
-					"name" : "n[3]",
+					"name" : "B[3]",
 					"strict" : false
 				}
 			]

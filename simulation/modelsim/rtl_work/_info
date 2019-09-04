@@ -7,63 +7,42 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Edgar/Documents/Laboratorio2-ALU/simulation/modelsim
-vsheftRight
+Z0 dD:/Escritorio/ALU/simulation/modelsim
+vadder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-<<<<<<< HEAD
 Z2 !s110 1567572436
 !i10b 1
 !s100 ehjUGJnRhRCWihfg?nTz32
 I=kQjJDZ9F5dTbA6GI@mEe0
-=======
-Z2 !s110 1567569199
-!i10b 1
-!s100 PebPOmXDOKZ8zDI8>WCHO0
-IZ:j>JTRz9hic>B;z:cf2[3
->>>>>>> be719f87da2b3f2e17e53a22dabc3511f133f571
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 sheftRight_sv_unit
+!s105 adder_sv_unit
 S1
 R0
-<<<<<<< HEAD
 w1567567992
 8D:/Escritorio/ALU/adder.sv
 FD:/Escritorio/ALU/adder.sv
-=======
-w1567568647
-8C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv
-FC:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv
->>>>>>> be719f87da2b3f2e17e53a22dabc3511f133f571
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-<<<<<<< HEAD
 Z5 !s108 1567572435.000000
 !s107 D:/Escritorio/ALU/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Escritorio/ALU|D:/Escritorio/ALU/adder.sv|
-=======
-Z5 !s108 1567569199.000000
-!s107 C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU|C:/Users/Edgar/Documents/Laboratorio2-ALU/sheftRight.sv|
->>>>>>> be719f87da2b3f2e17e53a22dabc3511f133f571
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU
+Z7 !s92 -sv -work work +incdir+D:/Escritorio/ALU
 Z8 tCvgOpt 0
-nsheft@right
-vtestShiftRight
+vand_gate
 R1
 Z9 !s110 1567572435
 !i10b 1
-!s100 cRl2S=zN1F;R1N8OoH;A_2
-I092Z7_RJOmD4C2N2JE8gf1
+!s100 gSi:`odPHSU:>b;mhZd8F3
+IV^Y>O7Y9KUeZcQ2CF>^X:1
 R3
-!s105 testShiftRight_sv_unit
+!s105 and_gate_sv_unit
 S1
 R0
-<<<<<<< HEAD
 w1567531401
 8D:/Escritorio/ALU/and_gate.sv
 FD:/Escritorio/ALU/and_gate.sv
@@ -270,17 +249,11 @@ R0
 w1567572391
 8D:/Escritorio/ALU/testALU.sv
 FD:/Escritorio/ALU/testALU.sv
-=======
-w1567569147
-8C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv
-FC:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv
->>>>>>> be719f87da2b3f2e17e53a22dabc3511f133f571
 L0 1
 R4
 r1
 !s85 0
 31
-<<<<<<< HEAD
 R10
 !s107 D:/Escritorio/ALU/testALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Escritorio/ALU|D:/Escritorio/ALU/testALU.sv|
@@ -310,13 +283,7 @@ r1
 R12
 !s107 D:/Escritorio/ALU/xor_gate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Escritorio/ALU|D:/Escritorio/ALU/xor_gate.sv|
-=======
-R5
-!s107 C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Edgar/Documents/Laboratorio2-ALU|C:/Users/Edgar/Documents/Laboratorio2-ALU/testShiftRight.sv|
->>>>>>> be719f87da2b3f2e17e53a22dabc3511f133f571
 !i113 1
 R6
 R7
 R8
-ntest@shift@right
