@@ -1,41 +1,37 @@
-|testALU
-
-
-|testALU|MuxOperaciones:ALU
+|MuxOperaciones
 A[0] => A[0].IN2
 A[1] => A[1].IN2
 A[2] => A[2].IN2
-A[3] => A[3].IN2
 B[0] => B[0].IN2
 B[1] => B[1].IN2
 B[2] => B[2].IN2
-B[3] => B[3].IN2
 selector[0] => selector[0].IN2
 selector[1] => selector[1].IN2
 selector[2] => selector[2].IN2
-operacion => out.OUTPUTSELECT
-operacion => out.OUTPUTSELECT
-operacion => out.OUTPUTSELECT
-operacion => out.OUTPUTSELECT
-out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
-cout <= MuxAritmetico:MA.port3
+operacion => result.OUTPUTSELECT
+operacion => result.OUTPUTSELECT
+operacion => result.OUTPUTSELECT
+operacion => result.OUTPUTSELECT
+result[0] << result[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] << result[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] << result[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] << result[3].DB_MAX_OUTPUT_PORT_TYPE
+outResult[0] << Decodificador:decoResult.port1
+outResult[1] << Decodificador:decoResult.port1
+outResult[2] << Decodificador:decoResult.port1
+outResult[3] << Decodificador:decoResult.port1
+outResult[4] << Decodificador:decoResult.port1
+outResult[5] << Decodificador:decoResult.port1
+outResult[6] << Decodificador:decoResult.port1
 
 
-|testALU|MuxOperaciones:ALU|MuxLogico:ML
+|MuxOperaciones|MuxLogico:ML
 A[0] => A[0].IN6
 A[1] => A[1].IN6
 A[2] => A[2].IN6
-A[3] => A[3].IN6
-B[0] => B[0].IN6
-B[1] => B[1].IN6
-B[2] => B[2].IN6
-B[3] => B[3].IN6
-s[0] => out.OUTPUTSELECT
-s[0] => out.OUTPUTSELECT
-s[0] => out.OUTPUTSELECT
+B[0] => B[0].IN5
+B[1] => B[1].IN5
+B[2] => B[2].IN5
 s[0] => out.OUTPUTSELECT
 s[0] => out.OUTPUTSELECT
 s[0] => out.OUTPUTSELECT
@@ -51,120 +47,90 @@ s[1] => out.OUTPUTSELECT
 s[1] => out.OUTPUTSELECT
 s[1] => out.OUTPUTSELECT
 s[1] => out.OUTPUTSELECT
-s[1] => out.OUTPUTSELECT
-s[1] => out.OUTPUTSELECT
-s[2] => out.OUTPUTSELECT
 s[2] => out.OUTPUTSELECT
 s[2] => out.OUTPUTSELECT
 s[2] => out.OUTPUTSELECT
 out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxLogico:ML|and_gate:AG
+|MuxOperaciones|MuxLogico:ML|and_gate:AG
 a[0] => and_out.IN0
 a[1] => and_out.IN0
 a[2] => and_out.IN0
-a[3] => and_out.IN0
 b[0] => and_out.IN1
 b[1] => and_out.IN1
 b[2] => and_out.IN1
-b[3] => and_out.IN1
 and_out[0] <= and_out.DB_MAX_OUTPUT_PORT_TYPE
 and_out[1] <= and_out.DB_MAX_OUTPUT_PORT_TYPE
 and_out[2] <= and_out.DB_MAX_OUTPUT_PORT_TYPE
-and_out[3] <= and_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxLogico:ML|or_gate:OG
+|MuxOperaciones|MuxLogico:ML|or_gate:OG
 a[0] => or_out.IN0
 a[1] => or_out.IN0
 a[2] => or_out.IN0
-a[3] => or_out.IN0
 b[0] => or_out.IN1
 b[1] => or_out.IN1
 b[2] => or_out.IN1
-b[3] => or_out.IN1
 or_out[0] <= or_out.DB_MAX_OUTPUT_PORT_TYPE
 or_out[1] <= or_out.DB_MAX_OUTPUT_PORT_TYPE
 or_out[2] <= or_out.DB_MAX_OUTPUT_PORT_TYPE
-or_out[3] <= or_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxLogico:ML|xor_gate:XG
+|MuxOperaciones|MuxLogico:ML|xor_gate:XG
 a[0] => y.IN0
 a[1] => y.IN0
 a[2] => y.IN0
-a[3] => y.IN0
 b[0] => y.IN1
 b[1] => y.IN1
 b[2] => y.IN1
-b[3] => y.IN1
 y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxLogico:ML|xor_gate:RG
-a[0] => y.IN0
-a[1] => y.IN0
-a[2] => y.IN0
-a[3] => y.IN0
-b[0] => y.IN1
-b[1] => y.IN1
-b[2] => y.IN1
-b[3] => y.IN1
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+|MuxOperaciones|MuxLogico:ML|sheftRight:RG
+a[0] => ShiftRight0.IN3
+a[1] => ShiftRight0.IN2
+a[2] => ShiftRight0.IN1
+n[0] => ShiftRight0.IN6
+n[1] => ShiftRight0.IN5
+n[2] => ShiftRight0.IN4
+shift[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+shift[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+shift[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxLogico:ML|xor_gate:IG
-a[0] => y.IN0
-a[1] => y.IN0
-a[2] => y.IN0
-a[3] => y.IN0
-b[0] => y.IN1
-b[1] => y.IN1
-b[2] => y.IN1
-b[3] => y.IN1
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+|MuxOperaciones|MuxLogico:ML|shiftLeft:IG
+a[0] => ShiftLeft0.IN3
+a[1] => ShiftLeft0.IN2
+a[2] => ShiftLeft0.IN1
+n[0] => ShiftLeft0.IN6
+n[1] => ShiftLeft0.IN5
+n[2] => ShiftLeft0.IN4
+shift[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+shift[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+shift[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxLogico:ML|xor_gate:CG
-a[0] => y.IN0
-a[1] => y.IN0
-a[2] => y.IN0
-a[3] => y.IN0
-b[0] => y.IN1
-b[1] => y.IN1
-b[2] => y.IN1
-b[3] => y.IN1
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+|MuxOperaciones|MuxLogico:ML|rotator:CG
+A[0] => Out[2].DATAIN
+A[1] => Out[0].DATAIN
+A[2] => Out[1].DATAIN
+Out[0] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxAritmetico:MA
+|MuxOperaciones|MuxAritmetico:MA
 A[0] => A[0].IN5
 A[1] => A[1].IN5
 A[2] => A[2].IN5
-A[3] => A[3].IN5
-B[0] => B[0].IN5
-B[1] => B[1].IN5
-B[2] => B[2].IN5
-B[3] => B[3].IN5
-s[0] => out.OUTPUTSELECT
-s[0] => out.OUTPUTSELECT
-s[0] => out.OUTPUTSELECT
+B[0] => B[0].IN4
+B[1] => B[1].IN4
+B[2] => B[2].IN4
 s[0] => out.OUTPUTSELECT
 s[0] => out.OUTPUTSELECT
 s[0] => out.OUTPUTSELECT
@@ -180,9 +146,6 @@ s[1] => out.OUTPUTSELECT
 s[1] => out.OUTPUTSELECT
 s[1] => out.OUTPUTSELECT
 s[1] => out.OUTPUTSELECT
-s[1] => out.OUTPUTSELECT
-s[1] => out.OUTPUTSELECT
-s[2] => out.OUTPUTSELECT
 s[2] => out.OUTPUTSELECT
 s[2] => out.OUTPUTSELECT
 s[2] => out.OUTPUTSELECT
@@ -190,83 +153,79 @@ cout <= adder:AD.port4
 out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxAritmetico:MA|adder:AD
+|MuxOperaciones|MuxAritmetico:MA|adder:AD
 a[0] => _.DATAD
 a[1] => _.DATAD
 a[2] => _.DATAD
-a[3] => _.DATAD
 b[0] => _.DATAC
 b[1] => _.DATAC
 b[2] => _.DATAC
-b[3] => _.DATAC
 cin => _.DATAB
 s[0] <= _.SUM_OUT
 s[1] <= _.SUM_OUT
 s[2] <= _.SUM_OUT
-s[3] <= _.SUM_OUT
 cout <= _.SUM_OUT
 
 
-|testALU|MuxOperaciones:ALU|MuxAritmetico:MA|substractor:SB
-a[0] => Add0.IN8
-a[1] => Add0.IN7
-a[2] => Add0.IN6
-a[3] => Add0.IN5
-b[0] => Add0.IN4
-b[1] => Add0.IN3
-b[2] => Add0.IN2
-b[3] => Add0.IN1
+|MuxOperaciones|MuxAritmetico:MA|substractor:SB
+a[0] => Add0.IN6
+a[1] => Add0.IN5
+a[2] => Add0.IN4
+b[0] => Add0.IN3
+b[1] => Add0.IN2
+b[2] => Add0.IN1
 r[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 r[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 r[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-r[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxAritmetico:MA|division:AR
-a[0] => Div0.IN3
-a[1] => Div0.IN2
-a[2] => Div0.IN1
-a[3] => Div0.IN0
-b[0] => Div0.IN7
-b[1] => Div0.IN6
-b[2] => Div0.IN5
-b[3] => Div0.IN4
-div_out[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-div_out[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-div_out[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-div_out[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+|MuxOperaciones|MuxAritmetico:MA|N_right_arit:AR
+a[0] => ShiftRight0.IN3
+a[1] => ShiftRight0.IN2
+a[2] => ShiftRight0.IN0
+a[2] => ShiftRight0.IN1
+b[0] => ShiftRight0.IN6
+b[1] => ShiftRight0.IN5
+b[2] => ShiftRight0.IN4
+y[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxAritmetico:MA|multiplicacion:AI
-a[0] => Mult0.IN3
-a[1] => Mult0.IN2
-a[2] => Mult0.IN1
-a[3] => Mult0.IN0
-b[0] => Mult0.IN7
-b[1] => Mult0.IN6
-b[2] => Mult0.IN5
-b[3] => Mult0.IN4
-mult_out[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-mult_out[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-mult_out[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-mult_out[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+|MuxOperaciones|MuxAritmetico:MA|shiftLeft:AI
+a[0] => ShiftLeft0.IN3
+a[1] => ShiftLeft0.IN2
+a[2] => ShiftLeft0.IN1
+n[0] => ShiftLeft0.IN6
+n[1] => ShiftLeft0.IN5
+n[2] => ShiftLeft0.IN4
+shift[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+shift[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+shift[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testALU|MuxOperaciones:ALU|MuxAritmetico:MA|substractor:AC
-a[0] => Add0.IN8
-a[1] => Add0.IN7
-a[2] => Add0.IN6
-a[3] => Add0.IN5
-b[0] => Add0.IN4
-b[1] => Add0.IN3
-b[2] => Add0.IN2
-b[3] => Add0.IN1
-r[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-r[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-r[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-r[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+|MuxOperaciones|MuxAritmetico:MA|rotator:AC
+A[0] => Out[2].DATAIN
+A[1] => Out[0].DATAIN
+A[2] => Out[1].DATAIN
+Out[0] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MuxOperaciones|Decodificador:decoResult
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

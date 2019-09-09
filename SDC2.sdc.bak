@@ -1,0 +1,5 @@
+create_clock -name {clk} -period 1 [get_ports {clock}]
+
+set_input_delay 3 -clock [get_clocks {clk}] [get_ports reset]
+
+set_output_delay 10 -clock [get_clocks {clk}] [get_ports result[*]]

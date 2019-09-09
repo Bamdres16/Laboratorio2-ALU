@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY testALU
+set_global_assignment -name TOP_LEVEL_ENTITY MuxOperaciones
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:51:50  AUGUST 27, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -51,6 +51,24 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AE12 -to A[2]
+set_location_assignment PIN_AD10 -to A[1]
+set_location_assignment PIN_AC9 -to A[0]
+set_location_assignment PIN_AE11 -to B[2]
+set_location_assignment PIN_AD12 -to B[1]
+set_location_assignment PIN_AD11 -to B[0]
+set_location_assignment PIN_AF9 -to selector[2]
+set_location_assignment PIN_AC12 -to selector[1]
+set_location_assignment PIN_AB12 -to selector[0]
+set_location_assignment PIN_AF10 -to operacion
+set_global_assignment -name SYSTEMVERILOG_FILE testXor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testShiftRight.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testShiftLeft.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testAdder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE shiftLeft.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sheftRight.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rotator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE registro.sv
 set_global_assignment -name SYSTEMVERILOG_FILE xor_gate.sv
 set_global_assignment -name SYSTEMVERILOG_FILE MuxOperaciones.sv
 set_global_assignment -name SYSTEMVERILOG_FILE multiplex.sv
@@ -66,6 +84,25 @@ set_global_assignment -name SYSTEMVERILOG_FILE MuxAritmetico.sv
 set_global_assignment -name SYSTEMVERILOG_FILE testALU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE andTest.sv
 set_global_assignment -name SYSTEMVERILOG_FILE testLogico.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Decodificador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testDecoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE N_right_arit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE nright_test.sv
+set_location_assignment PIN_AH28 -to outResult[6]
+set_location_assignment PIN_AG28 -to outResult[5]
+set_location_assignment PIN_AF28 -to outResult[4]
+set_location_assignment PIN_AG27 -to outResult[3]
+set_location_assignment PIN_AE28 -to outResult[2]
+set_location_assignment PIN_AE27 -to outResult[1]
+set_location_assignment PIN_AE26 -to outResult[0]
+set_location_assignment PIN_V18 -to result[3]
+set_location_assignment PIN_V17 -to result[2]
+set_location_assignment PIN_W16 -to result[1]
+set_location_assignment PIN_V16 -to result[0]
+set_global_assignment -name SYSTEMVERILOG_FILE TIME_test.sv
+set_global_assignment -name SDC_FILE SDC1.sdc
+set_global_assignment -name SDC_FILE SDC2.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE testRegistro.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
